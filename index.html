@@ -7,14 +7,16 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #0f0f0f;
             color: #eee;
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://via.placeholder.com/1500x600?text=Grace+Mountain+Knight') center/cover;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
+                        url('images/Hero.jpg') center/cover no-repeat;
             height: 100vh;
+            min-height: 650px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -22,49 +24,61 @@
             color: white;
         }
         .hero-content h1 {
-            font-size: 3.5rem;
-            margin: 0;
+            font-size: 4rem;
+            margin: 0 0 10px 0;
         }
         .hero-content p {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
         }
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 14px 32px;
+            padding: 16px 36px;
             background: #c8102e;
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
+            font-size: 1.1rem;
         }
         section {
-            padding: 60px 20px;
-            max-width: 1000px;
+            padding: 70px 20px;
+            max-width: 1100px;
             margin: 0 auto;
         }
         h2 {
             text-align: center;
             color: #c8102e;
+            font-size: 2.2rem;
+        }
+        .album-art {
+            max-width: 320px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
         .links {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
+            margin-top: 40px;
         }
         .links a {
             background: #222;
-            padding: 15px 25px;
+            padding: 16px 28px;
             border-radius: 8px;
             color: white;
             text-decoration: none;
+            font-weight: 500;
         }
         footer {
             text-align: center;
-            padding: 40px;
+            padding: 50px 20px;
             background: #000;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+        }
+        .logo {
+            max-height: 80px;
         }
     </style>
 </head>
@@ -72,6 +86,7 @@
 
     <header>
         <div class="hero-content">
+            <img src="images/GMM_Logo_.png" alt="Grace Mountain Logo" class="logo">
             <h1>Grace Mountain</h1>
             <p>Modern Worship Rock • Reimagining Classic Hymns</p>
             <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Latest Videos</a>
@@ -80,26 +95,30 @@
 
     <section>
         <h2>Sovereign — Full Album Out Now</h2>
-        <p style="text-align:center; font-size:1.2rem;">
-            12 powerful worship tracks rooted in timeless hymns.<br>
-            Available on all major platforms.
+        <p style="text-align:center; font-size:1.25rem; max-width:700px; margin:0 auto 40px;">
+            12 powerful worship tracks rooted in timeless hymns.
         </p>
         
-        <div class="links" style="margin-top:40px;">
+        <div style="text-align:center;">
+            <img src="images/AlbumCover_14x14.jpg" alt="Sovereign Album Cover" class="album-art">
+        </div>
+
+        <div class="links">
             <a href="https://push.fm/fl/ve7ywvdt" target="_blank">🎵 Stream the Album</a>
-            <a href="https://www.youtube.com/@Grace_Mountain" target="_blank">📺 Watch Videos</a>
+            <a href="https://www.youtube.com/@Grace_Mountain" target="_blank">📺 Watch All Videos</a>
             <a href="https://x.com/GraceMtnMusic" target="_blank">🐦 Follow on X</a>
         </div>
     </section>
 
     <section style="background:#1a1a1a;">
-        <h2>Latest Release: Glory</h2>
-        <p style="text-align:center;">
-            A bold reimagining of "To God Be The Glory"<br>
-            From the cross to the throne — the victory is won!
+        <h2>Latest Video: Glory</h2>
+        <p style="text-align:center; font-size:1.2rem;">
+            A bold reimagining of "To God Be The Glory"
         </p>
-        <!-- Add your YouTube embed here later -->
-        <p style="text-align:center; margin-top:30px;">
+        <div style="text-align:center; margin:40px 0;">
+            <img src="images/Thumb-1280x720.jpg" alt="Glory Video Thumbnail" style="max-width:100%; border-radius:12px;">
+        </div>
+        <p style="text-align:center;">
             <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch "Glory" Now</a>
         </p>
     </section>
@@ -107,8 +126,9 @@
     <footer>
         <p>&copy; 2026 Grace Mountain • Cassville, Missouri</p>
         <p>
-            <a href="https://x.com/GraceMtnMusic" style="color:#c8102e;">X</a> • 
-            YouTube • Spotify
+            <a href="https://x.com/GraceMtnMusic" style="color:#c8102e; margin:0 10px;">X</a> • 
+            <a href="https://www.youtube.com/@Grace_Mountain" style="color:#c8102e; margin:0 10px;">YouTube</a> • 
+            <a href="https://push.fm/fl/ve7ywvdt" style="color:#c8102e; margin:0 10px;">Listen</a>
         </p>
     </footer>
 
