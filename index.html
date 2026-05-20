@@ -8,12 +8,12 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #0f0f0f;
+            background: #0a0a0a;
             color: #eee;
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
                         url('Hero.jpg') center/cover no-repeat;
             height: 100vh;
             min-height: 650px;
@@ -24,11 +24,12 @@
             color: white;
         }
         .hero-content h1 {
-            font-size: 4rem;
+            font-size: 4.2rem;
             margin: 0 0 10px 0;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
         }
         .hero-content p {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-bottom: 30px;
         }
         .btn {
@@ -40,28 +41,58 @@
             border-radius: 50px;
             font-weight: bold;
             font-size: 1.1rem;
+            transition: all 0.3s;
         }
+        .btn:hover { transform: scale(1.05); background: #e02a3d; }
+
         section {
-            padding: 70px 20px;
+            padding: 80px 20px;
             max-width: 1100px;
             margin: 0 auto;
         }
         h2 {
             text-align: center;
             color: #c8102e;
-            font-size: 2.2rem;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
         }
         .album-art {
             max-width: 320px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
         }
+
+        .youtube-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 12px;
+        }
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .lyrics {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            white-space: pre-wrap;
+            font-size: 1.05rem;
+        }
+
         .links {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
-            margin-top: 40px;
+            margin: 40px 0;
         }
         .links a {
             background: #222;
@@ -69,16 +100,27 @@
             border-radius: 8px;
             color: white;
             text-decoration: none;
-            font-weight: 500;
         }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 14px;
+            background: #1f1f1f;
+            border: none;
+            border-radius: 8px;
+            color: white;
+        }
+
         footer {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             background: #000;
             font-size: 0.95rem;
-        }
-        .logo {
-            max-height: 80px;
         }
     </style>
 </head>
@@ -86,7 +128,7 @@
 
     <header>
         <div class="hero-content">
-            <img src="GMM_Logo_.png" alt="Grace Mountain Logo" class="logo">
+            <img src="GMM_Logo_.png" alt="Grace Mountain Logo" style="max-height:90px; margin-bottom:20px;">
             <h1>Grace Mountain</h1>
             <p>Modern Worship Rock • Reimagining Classic Hymns</p>
             <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Latest Videos</a>
@@ -95,40 +137,61 @@
 
     <section>
         <h2>Sovereign — Full Album Out Now</h2>
-        <p style="text-align:center; font-size:1.25rem; max-width:700px; margin:0 auto 40px;">
-            12 powerful worship tracks rooted in timeless hymns.
-        </p>
-        
         <div style="text-align:center;">
             <img src="AlbumCover_14x14.jpg" alt="Sovereign Album Cover" class="album-art">
         </div>
-
         <div class="links">
-            <a href="https://push.fm/fl/ve7ywvdt" target="_blank">🎵 Stream the Album</a>
-            <a href="https://www.youtube.com/@Grace_Mountain" target="_blank">📺 Watch All Videos</a>
+            <a href="https://push.fm/fl/ve7ywvdt" target="_blank">🎵 Stream Album</a>
             <a href="https://x.com/GraceMtnMusic" target="_blank">🐦 Follow on X</a>
         </div>
     </section>
 
-    <section style="background:#1a1a1a;">
+    <section style="background:#111;">
         <h2>Latest Video: Glory</h2>
-        <p style="text-align:center; font-size:1.2rem;">
-            A bold reimagining of "To God Be The Glory"
-        </p>
-        <div style="text-align:center; margin:40px 0;">
-            <img src="Thumb-1280x720.jpg" alt="Glory Video Thumbnail" style="max-width:100%; border-radius:12px;">
+        <div class="youtube-embed">
+            <iframe src="https://www.youtube.com/embed/5qKlaaBRC48" 
+        title="Glory - Grace Mountain" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
         </div>
-        <p style="text-align:center;">
-            <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch "Glory" Now</a>
+        <p style="text-align:center; margin-top:20px;">
+            <strong>To God Be The Glory</strong> — Modern Worship Rock Version
         </p>
+    </section>
+
+    <section>
+        <h2>Lyrics: Glory</h2>
+        <div class="lyrics">
+To God be the glory, great things He has done,
+So loved He the world that He gave us His Son,
+Who gave up His life so we could be free,
+And opened the way for eternity.
+
+Praise the Lord, praise the Lord,
+Let the whole world hear His voice;
+Praise the Lord, praise the Lord,
+Let every heart rejoice;
+Come to the Father through Jesus the Son,
+Give Him the glory — great things He has done.
+        </div>
+    </section>
+
+    <section style="background:#1a1a1a;">
+        <h2>Send a Prayer Request</h2>
+        <form action="https://formspree.io/f/YOUR_CODE_HERE" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="prayer" rows="5" placeholder="Write your prayer request..." required></textarea>
+            <button type="submit" class="btn" style="width:100%;">Submit Prayer Request</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2026 Grace Mountain • Cassville, Missouri</p>
         <p>
-            <a href="https://x.com/GraceMtnMusic" style="color:#c8102e; margin:0 10px;">X</a> • 
-            <a href="https://www.youtube.com/@Grace_Mountain" style="color:#c8102e; margin:0 10px;">YouTube</a> • 
-            <a href="https://push.fm/fl/ve7ywvdt" style="color:#c8102e; margin:0 10px;">Listen</a>
+            <a href="https://x.com/GraceMtnMusic" style="color:#c8102e;">X</a> • 
+            <a href="https://www.youtube.com/@Grace_Mountain" style="color:#c8102e;">YouTube</a> • 
+            <a href="https://push.fm/fl/ve7ywvdt" style="color:#c8102e;">Listen</a>
         </p>
     </footer>
 
