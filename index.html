@@ -50,21 +50,27 @@
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            margin: 10px;
+            margin: 8px;
         }
-        .links {
+        .stream-btns {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 12px;
             justify-content: center;
             margin: 40px 0;
         }
-        .links a {
+        .stream-btns a {
             background: #222;
-            padding: 16px 28px;
-            border-radius: 8px;
+            padding: 14px 24px;
+            border-radius: 50px;
             color: white;
             text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .stream-btns a:hover {
+            background: #c8102e;
+            transform: translateY(-3px);
         }
         .youtube-embed {
             position: relative;
@@ -93,7 +99,7 @@
                 <img src="GMM_Logo_.png" alt="Grace Mountain Logo" style="max-height:90px; margin-bottom:20px;">
                 <h1>Grace Mountain</h1>
                 <p>Modern Worship Rock • Reimagining Classic Hymns + Original Songs</p>
-                <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Videos</a>
+                <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Latest Videos</a>
             </div>
         </div>
     </header>
@@ -102,12 +108,16 @@
         <div class="container">
             <div class="content-center">
                 <h2>Sovereign — Full Album Out Now</h2>
-                <img src="AlbumCover_14x14.jpg" alt="Sovereign Album Cover" style="max-width:320px; border-radius:12px; box-shadow:0 15px 40px rgba(0,0,0,0.7);">
-                
-                <div class="links">
-                    <a href="https://www.youtube.com/@Grace_Mountain" target="_blank">📺 Watch All Videos</a>
-                    <a href="https://x.com/GraceMtnMusic" target="_blank">🐦 Follow on X</a>
+                <img src="AlbumCover_14x14.jpg" alt="Sovereign Album Cover" style="max-width:320px; border-radius:12px; box-shadow:0 15px 40px rgba(0,0,0,0.7); margin-bottom:30px;">
+
+                <div class="stream-btns">
+                    <a href="https://www.youtube.com/@Grace_Mountain" target="_blank">▶️ YouTube</a>
+                    <a href="https://x.com/GraceMtnMusic" target="_blank">🐦 X</a>
                     <a href="https://www.instagram.com/gracemtnmusic" target="_blank">📸 Instagram</a>
+                    <!-- Add streaming links when they are working -->
+                    <a href="#" target="_blank">🎵 Spotify</a>
+                    <a href="#" target="_blank">🍎 Apple Music</a>
+                    <a href="#" target="_blank">💿 Amazon Music</a>
                 </div>
             </div>
         </div>
@@ -123,7 +133,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
                 </div>
-                <p style="margin-top:20px;">
+                <p style="margin-top:25px;">
                     <a href="lyrics-glory.html" style="color:#c8102e; font-weight:bold;">Read Full Lyrics →</a>
                 </p>
             </div>
