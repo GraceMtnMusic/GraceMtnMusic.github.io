@@ -12,6 +12,14 @@
             color: #eee;
             line-height: 1.6;
         }
+
+        /* Main container for better centering */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         header {
             background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
                         url('Hero.jpg') center/cover no-repeat;
@@ -23,39 +31,24 @@
             text-align: center;
             color: white;
         }
-        .hero-content h1 {
-            font-size: 4.2rem;
-            margin: 0 0 10px 0;
-            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
-        }
-        .hero-content p {
-            font-size: 1.6rem;
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 16px 36px;
-            background: #c8102e;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-        }
-        .btn:hover { transform: scale(1.05); background: #e02a3d; }
 
         section {
-            padding: 80px 20px;
-            max-width: 1100px;
-            margin: 0 auto;
+            padding: 80px 0;
         }
+
         h2 {
             text-align: center;
             color: #c8102e;
             font-size: 2.4rem;
             margin-bottom: 40px;
         }
+
+        .content-center {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
         .album-art {
             max-width: 320px;
             border-radius: 12px;
@@ -70,6 +63,7 @@
             max-width: 100%;
             background: #000;
             border-radius: 12px;
+            margin: 0 auto;
         }
         .youtube-embed iframe {
             position: absolute;
@@ -80,123 +74,66 @@
         }
 
         .lyrics {
-            background: #1a1a1a;
-            padding: 30px;
+            background: #111;
+            padding: 40px;
             border-radius: 12px;
+            font-size: 1.15rem;
             white-space: pre-wrap;
-            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        .links a {
-            background: #222;
-            padding: 16px 28px;
-            border-radius: 8px;
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background: #c8102e;
             color: white;
             text-decoration: none;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: grid;
-            gap: 15px;
-        }
-        input, textarea {
-            padding: 14px;
-            background: #1f1f1f;
-            border: none;
-            border-radius: 8px;
-            color: white;
-        }
-
-        footer {
-            text-align: center;
-            padding: 60px 20px;
-            background: #000;
-            font-size: 0.95rem;
+            border-radius: 50px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="hero-content">
-            <img src="GMM_Logo_.png" alt="Grace Mountain Logo" style="max-height:90px; margin-bottom:20px;">
-            <h1>Grace Mountain</h1>
-            <p>Modern Worship Rock • Original Compostitions • Reimaged Classic Hymns</p>
-            <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Latest Videos</a>
+        <div class="container">
+            <div class="content-center">
+                <img src="GMM_Logo_.png" alt="Grace Mountain Logo" style="max-height:90px; margin-bottom:20px;">
+                <h1>Grace Mountain</h1>
+                <p>Modern Worship Rock • Reimagining Classic Hymns</p>
+                <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Latest Videos</a>
+            </div>
         </div>
     </header>
 
     <section>
-        <h2>Sovereign — Full Album Out Now</h2>
-        <div style="text-align:center;">
-            <img src="AlbumCover_14x14.jpg" alt="Sovereign Album Cover" class="album-art">
+        <div class="container">
+            <div class="content-center">
+                <h2>Sovereign — Full Album Out Now</h2>
+                <img src="AlbumCover_14x14.jpg" alt="Sovereign Album Cover" class="album-art">
+            </div>
         </div>
-<h3>Listen to Sovereign on your favorite platform:</h3>
-
-<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
-    
-    <a href="https://open.spotify.com/artist/1D5VxJVYeUQumijozQZSmD" target="_blank" style="background:#1DB954; color:white; padding:12px 20px; border-radius:50px; text-decoration:none; font-weight:bold; display:inline-flex; align-items:center; gap:8px;">
-        <strong>Spotify</strong>
-    </a>
-
-    <a href="https://music.apple.com/gb/artist/grace-mountain/1895742353" target="_blank" style="background:#FC3C3C; color:white; padding:12px 20px; border-radius:50px; text-decoration:none; font-weight:bold;">
-        <strong>Apple Music</strong>
-    </a>
-
-    <a href="https://music.amazon.co.uk/albums/B0GYT5M2Q7" target="_blank" style="background:#00A1FF; color:white; padding:12px 20px; border-radius:50px; text-decoration:none; font-weight:bold;">
-        <strong>Amazon Music</strong>
-    </a>
-
-    <a href="https://tidal.com/album/519757368" target="_blank" style="background:#000000; color:white; padding:12px 20px; border-radius:50px; text-decoration:none; font-weight:bold;">
-        <strong>Tidal</strong>
-    </a>
-
-    <a href="https://www.deezer.com/us/album/971364411" target="_blank" style="background:#00C8FF; color:white; padding:12px 20px; border-radius:50px; text-decoration:none; font-weight:bold;">
-        <strong>Deezer</strong>
-    </a>
-
-    <a href="https://www.iheart.com/artist/grace-mountain-50555631" target="_blank" style="background:#C600FF; color:white; padding:12px 20px; border-radius:50px; text-decoration:none; font-weight:bold;">
-        <strong>iHeartRadio</strong>
-    </a>
-
-</div>
     </section>
 
     <section style="background:#111;">
-        <h2>Latest Video: Glory</h2>
-        <div class="youtube-embed">
-            <iframe src="https://www.youtube.com/embed/5qKlaaBRC48" 
-        title="Glory - Grace Mountain" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-        </div>
-        <p style="text-align:center; margin-top:20px;">
-            <strong>To God Be The Glory</strong> — Modern Worship Rock Version
-        </p>
-    </section>
-
-    <section>
-         <h2>Lyrics: <a href="lyrics-glory.html">Glory</a></h2>
-        <div class="lyrics">
+        <div class="container">
+            <div class="content-center">
+                <h2>Latest Video: Glory</h2>
+                <div class="youtube-embed">
+                    <iframe src="https://www.youtube.com/embed/5qKlaaBRC48" 
+                            title="Glory - Grace Mountain" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Grace Mountain • Cassville, Missouri</p>
-        <p>
-            <a href="https://x.com/GraceMtnMusic" style="color:#c8102e;">X</a> • 
-            <a href="https://www.youtube.com/@Grace_Mountain" style="color:#c8102e;">YouTube</a> • 
-            <a href="https://push.fm/fl/ve7ywvdt" style="color:#c8102e;">Listen</a>
-        </p>
+        <div class="container">
+            <p>&copy; 2026 Grace Mountain • Cassville, Missouri</p>
+        </div>
     </footer>
 
 </body>
