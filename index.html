@@ -12,14 +12,11 @@
             color: #eee;
             line-height: 1.6;
         }
-
-        /* Main container for better centering */
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
         header {
             background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
                         url('Hero.jpg') center/cover no-repeat;
@@ -31,30 +28,44 @@
             text-align: center;
             color: white;
         }
-
         section {
             padding: 80px 0;
         }
-
         h2 {
             text-align: center;
             color: #c8102e;
             font-size: 2.4rem;
             margin-bottom: 40px;
         }
-
         .content-center {
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
-
-        .album-art {
-            max-width: 320px;
-            border-radius: 12px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background: #c8102e;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px;
         }
-
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .links a {
+            background: #222;
+            padding: 16px 28px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+        }
         .youtube-embed {
             position: relative;
             padding-bottom: 56.25%;
@@ -72,26 +83,6 @@
             width: 100%;
             height: 100%;
         }
-
-        .lyrics {
-            background: #111;
-            padding: 40px;
-            border-radius: 12px;
-            font-size: 1.15rem;
-            white-space: pre-wrap;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 16px 36px;
-            background: #c8102e;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
@@ -101,8 +92,8 @@
             <div class="content-center">
                 <img src="GMM_Logo_.png" alt="Grace Mountain Logo" style="max-height:90px; margin-bottom:20px;">
                 <h1>Grace Mountain</h1>
-                <p>Modern Worship Rock • Reimagining Classic Hymns</p>
-                <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Latest Videos</a>
+                <p>Modern Worship Rock • Reimagining Classic Hymns + Original Songs</p>
+                <a href="https://www.youtube.com/@Grace_Mountain" class="btn" target="_blank">Watch Videos</a>
             </div>
         </div>
     </header>
@@ -111,7 +102,13 @@
         <div class="container">
             <div class="content-center">
                 <h2>Sovereign — Full Album Out Now</h2>
-                <img src="AlbumCover_14x14.jpg" alt="Sovereign Album Cover" class="album-art">
+                <img src="AlbumCover_14x14.jpg" alt="Sovereign Album Cover" style="max-width:320px; border-radius:12px; box-shadow:0 15px 40px rgba(0,0,0,0.7);">
+                
+                <div class="links">
+                    <a href="https://www.youtube.com/@Grace_Mountain" target="_blank">📺 Watch All Videos</a>
+                    <a href="https://x.com/GraceMtnMusic" target="_blank">🐦 Follow on X</a>
+                    <a href="https://www.instagram.com/gracemtnmusic" target="_blank">📸 Instagram</a>
+                </div>
             </div>
         </div>
     </section>
@@ -126,6 +123,9 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
                 </div>
+                <p style="margin-top:20px;">
+                    <a href="lyrics-glory.html" style="color:#c8102e; font-weight:bold;">Read Full Lyrics →</a>
+                </p>
             </div>
         </div>
     </section>
